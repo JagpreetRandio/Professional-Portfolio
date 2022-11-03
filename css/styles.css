@@ -60,14 +60,8 @@ a{
 }
 
 img {
-    /* position: center; */
-    /* border-radius: 15px;
-    max-width: 250px;
-    float: right;
-    margin: 10px;
-    padding: 10px;
-    flex-wrap: wrap; */
-    position: center;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -75,7 +69,23 @@ img {
     padding: 10px;
     border-radius: 15px;
 }
-
+.selfie{
+    float: right;
+    width: 117%;
+    max-width: 650px;
+}
+/* change out the selfie in the future */
+.extra {
+    max-width: 650px;
+    flex-direction: column;
+}
+/* struggling with putting the images in a 2 columns rather than a row! Not sure on what to do */
+.contact {
+    background-color: rgb(201, 168, 195);
+    font-size: 15px;
+    border-radius: 15px;
+    
+}
 
 h2 {
     margin-top: 15px;
@@ -91,7 +101,8 @@ h2 {
     border: 5px solid powderblue;
 
 }
-h3 {
+h3,
+.first {
     display: flex;
     justify-content: center;
     font-size: 15px;
@@ -121,9 +132,13 @@ p {
     border-radius: 15px;
     line-height: 40px;
 }
-.div{
-    
-}
+/* .projects img {
+    display: grid;
+    grid-column: auto;
+    border: 2px solid black;
+    width: 45%;
+    margin: 1.66%;
+  } */
 
 #email,
 #github {
@@ -149,11 +164,14 @@ map {
     section {
       padding-right: 10px;
     }
+    img{
+        width:90%;
+        flex-direction: ;
+    }
 
     p,
     h2,
-    h3,
-    img {
+    h3 {
       width: 90%;
       text-align: center;
     }
