@@ -5,13 +5,13 @@
 }
 
 body{
-    background-color: rgb(247, 247, 233);
+    background-color: rgb(228, 228, 225);
 }
 
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 
@@ -31,11 +31,12 @@ header h1 {
     font: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     justify-content: center;
+    color: whitesmoke;
 
 }
 
 header nav ul{
-    padding: 10px;
+    padding: 5px;
     list-style: disc;
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
@@ -45,13 +46,13 @@ header nav ul{
 
 }
 
-header nav li{
+/* header nav li{
     align-items: center;
     font-size: 10px;
     color: whitesmoke;
     margin-bottom: 15px;
     line-height: 20px;
-}
+} */
 
 a{
     color: whitesmoke;
@@ -59,13 +60,15 @@ a{
 }
 
 img {
-    display: block;
-    box-sizing: border-box;
+    position: relative;
+    left: 50px;
+    right: 50px;
     margin: 10px auto;
-    border-radius: 15px;
-    max-width: 280px;
-    float: right;
-    margin-left: 25px;
+    border-radius: 10px;
+    margin-left: 35px;
+    /* box-sizing: border-box; */
+    /* max-width: 280px; */
+    float: left;
 }
 
 
@@ -76,11 +79,19 @@ h2 {
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     font-size: 40px;
-    color: azure;
+    color: whitesmoke;
     background-color: rgb(135, 105, 140);
     border-radius: 20px;
     border: 5px solid powderblue;
 
+}
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: whitesmoke;
+    background-color: rgb(135, 105, 140);
+    border-radius: 5px;
 }
 p {
     margin-right: 300px;
@@ -92,6 +103,32 @@ p {
     font-size: 20px;
     border-radius: 5px;
     line-height: 40px;
-
 }
 
+#email,
+#github {
+    display:block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    header,
+    main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 10px;
+    }
+  
+    p,
+    h2,
+    img,
+    h3 {
+      width: 90%;
+      text-align: center;
+    }
+  }
