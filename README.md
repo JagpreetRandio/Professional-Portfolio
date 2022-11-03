@@ -7,10 +7,11 @@ First professional portfolio will showcase the projects I've worked. There are a
 - Put four images in columns rather than a row
 - fix the aesthics of the page
 - fix the first image 
-## Installation
 
-N/A
+## Deployment 
 
+URL of Deployment: 
+https://jagpreetrandio.github.io/Professional-Portfolio/
 ## Usage
 
 ![alt text](images/First%20screenshot.png) 
