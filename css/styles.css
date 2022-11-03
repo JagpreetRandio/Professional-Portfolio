@@ -29,7 +29,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     font: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-content: center;
     color: whitesmoke;
 
@@ -39,7 +39,7 @@ header nav ul{
     padding: 5px;
     list-style: disc;
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-family:'Times New Roman', Times, serif;
     justify-content: space-around;
     background-color: rgb(201, 168, 195);
     border-radius: 12px;
@@ -57,27 +57,26 @@ header nav ul{
 a{
     color: whitesmoke;
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img {
-    position: relative;
-    left: 50px;
-    right: 50px;
-    margin: 10px auto;
-    border-radius: 10px;
-    margin-left: 35px;
-    /* box-sizing: border-box; */
-    /* max-width: 280px; */
-    float: left;
+    position: center;
+    border-radius: 15px;
+    max-width: 250px;
+    float: right;
+    margin: 10px;
+    padding: 10px;
 }
 
 
 h2 {
     margin-top: 15px;
     margin-bottom: 20px;
+    /* margin: 50px; */
     display: flex;
     justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     color: whitesmoke;
     background-color: rgb(135, 105, 140);
@@ -94,19 +93,23 @@ h3{
     border-radius: 5px;
 }
 p {
-    margin-right: 300px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     background-color: rgb(135, 105, 140);
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     line-height: 40px;
 }
 
 #email,
 #github {
+    padding: 10px;
+    margin: 10px;
     display:block;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -115,19 +118,18 @@ p {
 
 @media screen and (max-width: 768px) {
 
-    header,
-    main {
+    header {
       flex-direction: column;
     }
   
     section {
       padding-right: 10px;
     }
-  
+
     p,
     h2,
-    img,
-    h3 {
+    h3,
+    img {
       width: 90%;
       text-align: center;
     }
